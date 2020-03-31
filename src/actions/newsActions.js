@@ -3,22 +3,22 @@ export const SET_SPORTS_ARTICLE = "SET_SPORTS_ARTICLE"
 export const SET_TECHNOLOGY_ARTICLE = "SET_TECHNOLOGY_ARTICLE"
 export const SET_ENTERTAINMENT_ARTICLE = "SET_ENTERTAINMENT_ARTICLE"
 
-export const setHeadlinesArticle = article =>({
+export const setHeadlinesArticle = headlines =>({
     type: SET_HEADLINES_ARTICLE,
-    payload: article
+    payload: headlines
 })
 
-export const setSportsArticle = article =>({
+export const setSportsArticle = sports =>({
     type: SET_SPORTS_ARTICLE,
-    payload: article
+    payload: sports
 })
 
-export const setTechnologyArticle = article =>({
+export const setTechnologyArticle = tech =>({
     type: SET_TECHNOLOGY_ARTICLE,
-    payload: article
+    payload: tech
 })
 
-export const setEntertainmentArticle = article =>({
+export const setEntertainmentArticle = artigo =>({
     type: SET_ENTERTAINMENT_ARTICLE,
-    payload: article
+    payload: artigo
 })
