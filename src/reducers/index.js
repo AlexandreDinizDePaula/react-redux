@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
-import { favorites } from "./favorites";
+import { news } from "./news";
+import {counter} from "./counter"
 
 export const reducers = combineReducers({
-  favorites
+  news, counter
 });

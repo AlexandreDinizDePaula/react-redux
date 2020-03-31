@@ -1,4 +1,157 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+/*Geral*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+a{
+  text-decoration: none; font-weight: bold;
+}
+/*Geral NavBar*/
+
+.nav{
+  
+  background: #fa1313;
+  width: 100%;
+}
+.nav li:hover:not(:first-child){
+  background: #e21313;
+}
+.nav a{
+  color: white
+}
+
+.buttonMob{
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+  background-color: #fa1313;
+}
+/*Geral BODY*/
+.news-grid{
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  gap: 20px;
+}
+.news-grid-item{
+  
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+.news-grid-item p{
+  font-size: 16px;
+}
+.counterPages{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.counterPages li{
+  width: 99%;
+  font-size: 12px;
+  font-weight: bold;
+}
+/*FOOTER*/
+.footer{
+  width: 100%;
+  background-color: #fa1313;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.footer p{
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px){
+/*NavBar Mobile*/
+.nav{
+  display: none;
+}
+  .nav li{
+    display: list-item;
+    
+    text-align: center;
+  }
+  .nav li:first-of-type{
+    display: none;
+  }
+  .news-grid{
+    display: flex;
+    flex-direction: column;
+  }  
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+/*NavBar Tablet*/
+.nav{
+    display: none;
+  }  
+.nav li{
+    display: list-item;
+    text-align: center;
+  }
+  .nav li:first-of-type{
+    display: none;
+  }
+.news-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px){
+/*NavBar Desktop*/
+.nav{
+  overflow: hidden;
+}
+.nav li{
+ float: left;
+ display: block;
+ text-align: center;
+ width: 20%;
+ margin-top: 4px;
+}
+.nav li:not(:first-child){
+  margin-top: 8px;
+}
+.buttonMob{
+    display: none;
+  }
+.news-grid{
+    grid-template-columns: auto auto;
+  }  
+}
+
+@media screen and (min-width: 1200px) {
+/*NavBar Desktop*/
+.nav{
+  overflow: hidden;
+}
+.nav li{
+ float: left;
+ display: block;
+ text-align: center;
+ margin-top: 4px;
+ width: 20%;
+}
+.nav li:not(:first-child){
+  margin-top: 8px;
+}
+  .buttonMob{
+    display: none;
+  }
+}
+
