@@ -17,6 +17,7 @@ a{
   
   background: #fa1313;
   width: 100%;
+  margin-bottom: 20px;
 }
 .nav li:hover:not(:first-child){
   background: #e21313;
@@ -73,6 +74,43 @@ a{
   color: white;
   font-size: 12px;
   font-weight: bold;
+}
+
+/*News item*/
+.news-item{
+  width: 99%;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.news-item .title{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.news-item .description{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  
+}
+.news-item img{
+  width: 100%;
+  height: 100%;
+}
+.news-item .content{
+  width: 70%;
+  margin-top: 20px;
+  font-size: 12px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+.news-item .foot{
+  font-size: 12px;
+  font-weight: 600;
 }
 @media screen and (max-width: 480px){
 /*NavBar Mobile*/
