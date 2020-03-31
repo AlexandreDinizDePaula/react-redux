@@ -5,12 +5,16 @@ export const NewsItem = () => {
     const news = useSelector(state => state.news)
 
     return(
-        <div>
-            <h1>{news.artigo.title}</h1>
-            <h3>{news.artigo.description}</h3>
-            <p>{news.artigo.content}</p>
+        <div className="news-item">
+            <p className="title">{news.artigo.title}</p>
+            <p className="description">{news.artigo.description}</p>
+            <img src={news.artigo.urlToImage } width="600" height="400" />
+            <p className="content">{news.artigo.content}</p>
+            <p className="foot">Autor: {news.artigo.author}</p>
+            <p className="foot">Data de publicação: {news.artigo.publishedAt}</p>
         </div>
     )
 }
+
 
 
